@@ -1,3 +1,7 @@
+## 🌐 **How to Run The Page**
+
+To run this page simply double click the file ```index.html``` and the page should open in your default browser.
+
 
 ## 📝 **Task Description**
 
