@@ -2,6 +2,10 @@
 
 To run this page simply double click the file ```index.html``` and the page should open in your default browser.
 
+## Video Showcase of the Site
+
+[![Video Title](https://img.youtube.com/vi/YucaMinFwqU/hqdefault.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=YucaMinFwqU))
+
 
 ## 📝 **Task Description**
 
