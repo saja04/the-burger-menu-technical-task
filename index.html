@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+    </style>
+    <script src="scripts.js" defer></script>
+    <title>Burger Menu</title>
+  </head>
+  <body>
+    <div>
+      <div class="topContainer" id="go-up">
+        <button onclick="location.href='#top'"><img src="images/icons/up-arrow.png" alt="arrow up" /></button>
+      </div>
+      <!-- NAV BAR -->
+      <div class="navContainer" id="top">
+        <button onclick="location.href='#'"><img src="images/burger logo.png" alt="burger logo" class="logoImage" /></button>
+        <div class="navItemsContainer">
+          <button class="navButton" onclick="location.href='#about'">ABOUT US</button>
+          <button class="navButton" onclick="location.href='#menu'">MENU</button>
+          <button class="navButton" onclick="location.href='#faq'">FAQ</button>
+          <!-- SOCIALS -->
+          <div class="navSocialsContainer">
+            <button><img src="images/icons/instagram.png" alt="instagram" /></button>
+            <button><img src="images/icons/facebook.png" alt="facebook" /></button>
+            <button><img src="images/icons/tiktok.png" alt="tiktok" /></button>
+          </div>
+          <button class="orderButton">ORDER NOW</button>
+        </div>
+        <button class="dropdown-toggle"><img src="images/icons/dropdown.png" alt="dropdown menu" /></button>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-menu">
+          <button class="navButton" onclick="location.href='#about'" style="font-size: 1.5rem;">ABOUT US</button>
+          <button class="navButton" onclick="location.href='#menu'" style="font-size: 1.5rem;">MENU</button>
+          <button class="navButton" onclick="location.href='#faq'" style="font-size: 1.5rem;">FAQ</button>
+          <button class="orderButton">ORDER NOW</button>
+
+          <div class="navSocialsContainer" style="gap: 4rem">
+            <button><img src="images/icons/instagram.png" alt="instagram" style="width: 3rem" /></button>
+            <button><img src="images/icons/facebook.png" alt="facebook" style="width: 3rem" /></button>
+            <button><img src="images/icons/tiktok.png" alt="tiktok" style="width: 3rem" /></button>
+          </div>
+        </div>
+      </div>
+      <!-- BODY -->
+      <div class="bodyContainer">
+        <!-- EVENT -->
+        <div class="eventContainer">
+          <h4 style="font-family: 'Ancizar Serif', sans-serif; font-weight: 900; font-size: 1.7rem;">NEW BURGER LAUNCH</h4>
+          <h6 id="countdown">Loading...</h6>
+          <p>See you there!</p>
+        </div>
+
+        <!-- SIGNATURE -->
+        <div class="signatureContainer" id="about">
+          <img src="images/Burger Tower.png" alt="burger tower" />
+          <div class="signatureTextContainer">
+            <h3>Our Signature</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis fugiat omnis animi, cupiditate in explicabo, inventore cum laboriosam aliquam sequi. Repudiandae ipsa illum in!
+              Accusantium temporibus tenetur obcaecati ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis fugiat omnis animi, cupiditate in explicabo, inventore cum
+              laboriosam aliquam sequi. Repudiandae ipsa illum in! Accusantium temporibus tenetur obcaecati ullam.
+            </p>
+          </div>
+        </div>
+        <!-- PRODUCTS -->
+        <div class="productsContainer">
+          <div class="productsTextContainer">
+            <h3>Our Products</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis fugiat omnis animi, cupiditate in explicabo, inventore cum laboriosam aliquam sequi. Repudiandae ipsa illum in!
+              Accusantium temporibus tenetur obcaecati ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis fugiat omnis animi, cupiditate in explicabo, inventore cum
+              laboriosam aliquam sequi. Repudiandae ipsa illum in! Accusantium temporibus tenetur obcaecati ullam.
+            </p>
+          </div>
+          <img src="images/Eating Burger.png" alt="burger tower" />
+        </div>
+
+        <!-- MENU -->
+        <div class="menuContainer" id="menu">
+          <div class="menuItemsContainer">
+            <div class="menuItemContainer">
+              <h6>Nature Burger</h6>
+              <img src="images/burgers/Nature Burger.png" alt="nature burger" />
+              <p>A grilled beef patty topped with melted American cheese, crisp lettuce, fresh tomato, and our house sauce on a toasted brioche bun.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Smoky Mountain Burger</h6>
+              <img src="images/burgers/Smoky Mountain.png" alt="smoky mountain burger" style="width: 80%; margin-top: 1rem" />
+              <p>Smoked Angus beef layered with hickory bacon, sharp cheddar, caramelized onions, and chipotle mayo on our homemade sesame bun.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>The Firehouse Burger</h6>
+              <img src="images/burgers/The Firehouse Burger.png" alt="the firehouse burger" />
+              <p>A spicy blend of jalapeños, pepper jack cheese, and a fire-roasted chili aioli over a juicy beef patty with crunchy lettuce and tomato.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Backyard BBQ Burger</h6>
+              <img src="images/burgers/Backyard BBQ Burger.png" alt="backyard bbq burger" />
+              <p>Featuring a flame-grilled patty, smoked gouda, crispy onion straws, pickles, and sweet barbecue sauce on a toasted potato bun.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Double Stack Ranch Burger</h6>
+              <img src="images/burgers/Double Stack Ranch Burger.png" alt="double stack ranch burger" />
+              <p>Two beef patties with ranch dressing, cheddar cheese, thick-cut bacon, and dill pickles on our house-baked ranch-seasoned bun.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>The Harvest Veggie Burger</h6>
+              <img src="images/burgers/Harvest Veggie Burger.png" alt="harvest veggie burger" style="width: 95%; margin: 0" />
+              <p>A hearty black bean and quinoa patty topped with roasted red peppers, baby spinach, avocado spread, and a light lemon aioli on whole grain bread.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Bourbon Bacon Burger</h6>
+              <img src="images//burgers/Bourbon Bacon Burger.png" alt="bourbon bacon burger" />
+              <p>A tender bourbon-glazed beef patty with smoked bacon, white cheddar, grilled mushrooms, and caramelized onions on a warm brioche bun.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>The Sunrise Brunch Burger</h6>
+              <img src="images//burgers/Sunrise Brunch Burger.png" alt="sunrise brunch burger" />
+              <p>A savory patty topped with a fried egg, crispy bacon, American cheese, and maple aioli served on a freshly toasted breakfast roll.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Fries</h6>
+              <img src="images/burgers/French Fries.png" alt="french fries" style="width: 85%" />
+              <p>Classic french fries with our secret coating. They sure look average, but once you try them you won't be able to stop.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Cheddar Bacon Fries</h6>
+              <img src="images/burgers/Cheese Bacon Fries.png" alt="cheddar bacon french fries" />
+              <p>Our classic french fries with cheddar cheese dressing and a sprinkle of bacon bites.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>Loaded Beef Fries</h6>
+              <img src="images/burgers/Loaded French Fries.png" alt="loaded house beef french fries" />
+              <p>Our classic french fries with house-made dressing and a portion of our premium ground meat.</p>
+            </div>
+
+            <div class="menuItemContainer">
+              <h6>House Sauce</h6>
+              <img src="images/burgers/House Sauce.png" alt="house sauce" />
+              <p>Our signature house sauce made with secret ingredients, you can dip whatever you want in it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <h3 id="faq" class="faqTitle" style="">Frecuently Asked Questions</h3>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where is the place located?</span>
+              <span class="faq-icon">▲</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, dolorem at eius consequuntur eos rerum. Perferendis, unde obcaecati? Nihil, ex eum amet esse minus deserunt magni quae
+                iure aliquam eos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you take reservations?</span>
+              <span class="faq-icon">▲</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam possimus nisi, pariatur consectetur asperiores? Dolorum, esse! Perspiciatis molestiae voluptate minima sequi
+                unde, aspernatur voluptatem itaque inventore at rem quis!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you take events?</span>
+              <span class="faq-icon">▲</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, accusantium tempora at ratione molestiae sed consectetur voluptas sint debitis, labore quasi error officia id,
+                eum nostrum facilis possimus quo quam!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are you open to franchise?</span>
+              <span class="faq-icon">▲</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, accusantium tempora at ratione molestiae sed consectetur voluptas sint debitis, labore quasi error officia id,
+                eum nostrum facilis possimus quo quam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footerLogoContainer">
+            <img src="images/burger logo white.png" alt="the burger menu footer" />
+          </div>
+          <div class="footerInfoContainer">
+            <p>contact@theburgermenu.com</p>
+            <div class="navSocialsContainer" style="height: auto">
+              <button><img src="images/icons/instagram white.png" alt="instagram" style="width: 3rem" /></button>
+              <button><img src="images/icons/facebook white.png" alt="facebook" style="width: 3rem" /></button>
+              <button><img src="images/icons/tiktok white.png" alt="tiktok" style="width: 3rem" /></button>
+            </div>
+            <p>2458 W Maplewood Ave, Chicago, IL 60647</p>
+            <p>Web site created by <a target="_blank" href="https://www.linkedin.com/in/jamil-federico-saa-4ab74b297/" style="color: white;">Jamil Saa</a> - Alpha Efficiency Test Task</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

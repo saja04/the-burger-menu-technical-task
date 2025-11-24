@@ -1,0 +1,608 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth !important;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Ancizar Serif", sans-serif;
+}
+h6 {
+  font-family: "Ancizar Serif", sans-serif;
+}
+
+button {
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button:active {
+  opacity: 50%;
+}
+
+/* GO TO TOP */
+
+.topContainer {
+  position: fixed;
+  display: none;
+  bottom: 3%;
+  right: 5%;
+  z-index: 9999;
+}
+
+.topContainer img {
+  width: 4rem;  
+  border-radius: 100%;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.473);
+}
+
+.topContainer.show {
+  display: flex;
+}
+
+
+/* NAV */
+.parentContainer {
+  width: 100%;
+  height: 100vh;
+  color: black;
+}
+
+.navContainer {
+  width: 100%;
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navContainer button {
+  width: fit-content;
+}
+
+.logoImage {
+  width: 13rem;
+  margin-left: 3rem;
+}
+
+.navItemsContainer {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+.navButton {
+  font-size: 1.1rem;
+  overflow-x: hidden;
+  transition: transform 0.1s ease-in-out;
+  font-weight: 600;
+}
+
+.navButton:hover {
+  color: #bf6d01;
+  transform: translateY(-0.2rem);
+}
+
+.navSocialsContainer {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navSocialsContainer button {
+  width: fit-content;
+  height: auto;
+  transition: transform 0.1s ease-in-out;
+}
+
+.navSocialsContainer button:hover {
+  transform: translateY(-0.2rem);
+}
+
+.navSocialsContainer button:active {
+  transform: translateY(0);
+}
+
+.navSocialsContainer img {
+  width: 1.5rem;
+}
+
+.orderButton {
+  font-size: 1.1rem;
+  overflow-x: hidden;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: #bd7312;
+  border: 2px solid #bd7312;
+  border-radius: 0.5rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+.orderButton:hover {
+  background-color: white;
+  border: 2px solid #bd7312;
+  padding: 0.5rem - 2px 1rem - 2px;
+  color: black;
+  transform: translateY(-0.2rem);
+}
+
+.orderButton:active {
+  transform: translateY(0);
+}
+
+/* DROPDOWN NAVBAR */
+
+.dropdown {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
+.dropdown-toggle img {
+  width: 4rem;
+}
+
+.dropdown-menu {
+  width: 100%;
+  top: 100%;
+  padding: 2rem 4rem;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: white;
+}
+
+.dropdown.open .dropdown-menu {
+  display: flex;
+}
+
+/* BODY */
+.bodyContainer {
+  width: 100%;
+}
+
+/* EVENT */
+.eventContainer {
+  width: 100%;
+  background-color: #bf6d01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.eventContainer h6 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.eventContainer h4{
+  padding: 1rem;
+  color: white;
+}
+
+.eventContainer p {
+  margin: 0;
+  padding-top: 0;
+  padding: 1rem;
+
+}
+
+/* SIGNATURE */
+
+.signatureContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-image: url("images/panel.svg");
+  background-size: 25% 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.signatureContainer img {
+  flex: 0 0 35%;
+  width: 35%;
+  display: block;
+  margin-left: 7%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signatureTextContainer {
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.signatureTextContainer h3 {
+  width: 90%;
+  text-align: left;
+  color: #bf6d01;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+.signatureTextContainer p {
+  width: 90%;
+  text-align: left;
+}
+
+/* PRODUCTS */
+
+.productsContainer {
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-image: url("images/panel.svg");
+  background-size: 25% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.productsContainer img {
+  flex: 0 0 35%;
+  width: 35%;
+  display: block;
+  margin-right: 7%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.productsTextContainer {
+  margin-left: 7%;
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.productsTextContainer h3 {
+  width: 70%;
+  color: #bf6d01;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.productsTextContainer p {
+  width: 90%;
+  text-align: left;
+}
+
+/* MENU */
+.menuContainer {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.menuItemsContainer {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  max-width: calc(25rem * 4);
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.menuItemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bf6d01;
+  border-radius: 0.5rem;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+.menuItemContainer:hover {
+  transform: translate(0, -0.7rem);
+  background-color: #995700;
+}
+.menuItemContainer:hover img {
+  transform: scale(1.1);
+}
+
+.menuItemContainer h6 {
+  margin: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  height: 1rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menuItemContainer p {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(241, 241, 241);
+  padding: 0 1rem 0 1rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.menuItemContainer img {
+  width: 90%;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+}
+
+/* FAQ */
+
+.faqTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  padding: 2rem;
+}
+
+.faq-container {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.faq-question {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #bf6d01;
+  border-radius: 1rem;
+  border: 3px solid #bf6d01;
+  transition-property: background-color, color, border-radius;
+}
+
+.faq-question:hover {
+  color: #000000;
+}
+
+.faq-question[aria-expanded="true"] {
+  background-color: #bf6d01;
+  transition-delay: 0s, 0s, 0s;
+  color: white;
+  border-radius: 1rem 1rem 0 0;
+}
+.faq-question[aria-expanded="false"] {
+  transition-delay: 0s, 0s, 0.28s;
+}
+
+.faq-icon {
+  transform: rotate(180deg);
+  transition: transform 0.25s ease-out;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+  translate: 0 0;
+  transform: rotate(0deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 0 0 1rem 1rem;
+  background: #bf6d01;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 1rem 4rem 2rem 2rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLogoContainer {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLogoContainer img {
+  width: 50%;
+}
+
+.footerInfoContainer {
+  width: 60%;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 850px) {
+  .navItemsContainer {
+    display: none;
+  }
+
+  .logoImage {
+    margin-left: 0;
+    width: 10rem;
+  }
+
+  .dropdown-toggle {
+    display: block;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+}
+
+
+
+@media (orientation: portrait) {
+  .signatureContainer {
+    margin-bottom: 5rem;
+    flex-direction: column;
+    height: auto;
+    background-size: 100% 20%;
+    background-position: top;
+  }
+  .signatureContainer img {
+    width: 90%;
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+
+  .productsContainer {
+    margin-bottom: 5rem;
+    flex-direction: column-reverse;
+    height: auto;
+    background-size: 100% 20%;
+    background-position: top;
+  }
+  .productsContainer img {
+    width: 90%;
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+  .productsTextContainer {
+    margin-left: 0;
+  }
+
+  .faqTitle {
+    width: 90%;
+    text-align: left;
+    padding: 0;
+    padding-right: 2rem;
+    margin-left: 5%;
+    font-size: 2.2rem;
+  }
+
+  .faq-container {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 25rem;
+    gap: 2rem;
+  }
+
+  .footerInfoContainer {
+    font-size: 1rem;
+  }
+
+  .footerLogoContainer {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footerLogoContainer img {
+    width: 15rem;
+    margin-top: 2rem;
+  }
+
+  .footerInfoContainer {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 950px) and (max-height: 600px) {
+  .signatureTextContainer {
+    font-size: 1rem;
+  }
+  .signatureTextContainer h3 {
+    font-size: 1.5rem;
+  }
+
+  .productsTextContainer {
+    font-size: 1rem;
+  }
+  .productsTextContainer h3 {
+    font-size: 1.5rem;
+  }
+}
