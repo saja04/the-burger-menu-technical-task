@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const targetDate = new Date("2025-12-02T23:59:59");
+const targetDate = new Date("2025-12-14T23:59:59");
 
 function updateCountdown() {
     const now = new Date();
